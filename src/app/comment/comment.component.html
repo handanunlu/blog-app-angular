@@ -1,0 +1,13 @@
+<div class="container">
+  <form>
+    <div class="form-group">
+      <label for="comment_by">Title Of Blog</label>
+      <input type="text" class="form-control" name="comment_by" placeholder="If you want to specify which blog, please enter its title" #comment_by>
+    </div>
+    <div class="form-group">
+      <label for="content">Content</label>
+      <input type="text" class="form-control" name="content" placeholder="Please write us about what are you thinking" #content>
+    </div>
+    <button type="submit" (click)="addComment(comment_by,content)" class="btn btn-primary">Submit</button>
+  </form>
+</div>
